@@ -1,0 +1,27 @@
+# Visual Studio settings
+.vs/
+*.suo
+*.user
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Xamarin Studio settings
+*.userprefs
+
+# Visual Studio Code settings
+.vscode
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# ASP.NET Core
+/Properties/launchSettings.json
+/wwwroot/dist/
+
+# NPM
+/node_modules

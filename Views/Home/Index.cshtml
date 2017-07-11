@@ -1,0 +1,11 @@
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Index";
+}
+
+<div id="react-app">Loading...</div>
+
+@section scripts {
+        <script src="~/dist/main.js" asp-append-version="true"></script>
+}
