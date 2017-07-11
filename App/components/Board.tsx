@@ -1,4 +1,6 @@
 import * as React from 'react';
+import { RouteComponentProps } from 'react-router-dom';
+import { DocTitle } from './DocTitle';
 import 'isomorphic-fetch';
 
 interface FetchDataExampleState {
@@ -6,7 +8,7 @@ interface FetchDataExampleState {
     loading: boolean;
 }
 
-export class Board extends React.Component<{}, FetchDataExampleState> {
+export class Board extends React.Component<RouteComponentProps<{}>, FetchDataExampleState> {
     constructor() {
         super();
         this.state = { forecasts: [], loading: true };
@@ -23,10 +25,12 @@ export class Board extends React.Component<{}, FetchDataExampleState> {
             ? <p><em>Loading...</em></p>
             : Board.renderForecastsTable(this.state.forecasts);
 
-        return <div>
-            <h1>Message Board</h1>
-            { contents }
-        </div>;
+        return <DocTitle title='Message Board'>
+            <div>
+                <h1>Message Board</h1>
+                { contents }
+            </div>
+        </DocTitle>;
     }
 
     private static renderForecastsTable(forecasts: WeatherForecast[]) {

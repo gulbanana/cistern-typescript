@@ -6,6 +6,7 @@
     "jsx": "react",
     "sourceMap": true,
     "skipDefaultLibCheck": true,
+    "strict": true,
     "types": [
       "webpack-env",
       "aspnet-webpack-react"
