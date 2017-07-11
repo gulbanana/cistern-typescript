@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
-import { DocTitle } from './DocTitle';
+import { DocTitle } from '../components/DocTitle';
 
 interface CounterState {
     currentCount: number;

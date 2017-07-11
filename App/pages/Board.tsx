@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router-dom';
-import { DocTitle } from './DocTitle';
+import { DocTitle } from '../components/DocTitle';
 import 'isomorphic-fetch';
 
 interface FetchDataExampleState {
@@ -8,7 +8,7 @@ interface FetchDataExampleState {
     loading: boolean;
 }
 
-export class Board extends React.Component<RouteComponentProps<{}>, FetchDataExampleState> {
+export class Board extends React.Component<RouteComponentProps<void>, FetchDataExampleState> {
     constructor() {
         super();
         this.state = { forecasts: [], loading: true };

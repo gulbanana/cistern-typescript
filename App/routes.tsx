@@ -2,9 +2,9 @@ import * as React from 'react';
 import { Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { DocTitle } from './components/DocTitle';
-import { About } from './components/About';
-import { Board } from './components/Board';
-import { Settings } from './components/Settings';
+import { About } from './pages/About';
+import { Board } from './pages/Board';
+import { Settings } from './pages/Settings';
 
 export const routes = <DocTitle title='Cistern'>
     <Layout>
